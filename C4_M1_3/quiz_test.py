@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import re
 def compare_strings(string1, string2):
  #Convert both strings to lowercase
@@ -10,8 +12,6 @@ def compare_strings(string1, string2):
  punctuation = r"[.?!,;:\-']" # re.error: bad character range :-' at position 6
 
 
-
-
  string1 = re.sub(punctuation, r"", string1)
  string2 = re.sub(punctuation, r"", string2)
 
@@ -20,7 +20,6 @@ def compare_strings(string1, string2):
  print(string1 == string2)
  print(string1)
  print(string2)
-
  return string1 == string2
 
 
